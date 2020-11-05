@@ -7,6 +7,7 @@ Github : @danesc87
 Released under GPLv3
 """
 
+
 def get_nvidia_full_info():
     import os
     from xml.etree import ElementTree
