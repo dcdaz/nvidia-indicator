@@ -7,11 +7,10 @@ Github : @danesc87
 Released under GPLv3
 """
 
-from xml.etree import ElementTree
-
-
 def get_nvidia_full_info():
     import os
+    from xml.etree import ElementTree
+
     nvidia_raw_data = os.popen('nvidia-smi -q -x').read()
     if nvidia_raw_data == '' or 'NVIDIA-SMI has failed' in nvidia_raw_data:
         print('Nvidia Card is not ready!')
@@ -62,6 +61,7 @@ def get_nvidia_full_info():
 
 def get_nvidia_compact_info():
     import os
+
     nvidia_raw_data = os.popen('nvidia-smi -q -d TEMPERATURE | grep "GPU Current Temp"').read().strip()
     if nvidia_raw_data == '' or 'NVIDIA-SMI has failed' in nvidia_raw_data:
         print('Nvidia Card is not ready!')
