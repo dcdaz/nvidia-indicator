@@ -1,7 +1,7 @@
 [Desktop Entry]
 Encoding=UTF-8
 Name=Nvidia Indicator for Plasma 5
-Comment=Plasma 5 plasmoid that shows NVIDIA card info
+Comment=Shows NVIDIA card info
 Icon=nvidia
 Type=Service
 
