@@ -6,8 +6,8 @@ Item {
     id: fullRepr
     property bool onlyIfOn: plasmoid.configuration.onlyIfOn
 
-    width: 370
-    height: 270
+    width: 410
+    height: 280
 
     PlasmaCore.DataSource {
         id: dataSource
